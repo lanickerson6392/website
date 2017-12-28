@@ -5,7 +5,9 @@ body {
     
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 13px;
-    color:#333;
+    background-image; url(../AbstractBackground.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 p {
@@ -31,13 +33,6 @@ p {
     width: 150px;
     float: left;
     height: 500px;
-}
-
-.home {
-    
-    background-image; url(../AbstractBackground.svg);
-	background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .whativedone {
