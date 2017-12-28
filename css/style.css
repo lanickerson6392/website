@@ -2,9 +2,6 @@
 @import url("reset.css");
 
 body {
-    
-    font-family: Arial, sans-serif;
-    font-size: 13px;
     background-image: url(../AbstractBackground.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -14,11 +11,12 @@ p {
     color: rgb(256,256,256);
 	background-color: rgba(256,256,256,0.3);
     font-size: 25px;
-    font-family: "Book Antiqua", sans-serif;
+    font-family: Arial, sans-serif;
     text-align: left;
     float: none;
     padding: 10px;
-	margin-left: 200px;
+	margin-left: 185px;
+	margin-right: 50px;
 }
 
 #wrapper {
