@@ -35,7 +35,7 @@ p {
 
 .home {
     
-    background-image: url("AbstractBackground.svg");
+    background-image; url(../AbstractBackground.svg);
 	background-repeat: no-repeat;
     background-size: cover;
 }
