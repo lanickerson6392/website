@@ -35,7 +35,8 @@ p {
 
 #leftcolumn {
     
-    background-color: white;
+    background-color: black;
+	color: white;
     width: 150px;
     float: left;
     height: 500px;
