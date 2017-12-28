@@ -8,7 +8,7 @@ body {
 }
 
 p {
-    color: rgb(256,256,256);
+    color: rgb(0,256,256);
 	background-color: rgba(256,256,256,0.3);
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
