@@ -33,10 +33,10 @@ p {
 
 #leftcolumn {
     
-    background: #33CCFF;
+    background-color: white;
     width: 150px;
     float: left;
-    height: 500px;
+    height: 100%;
 }
 
 .whativedone {
