@@ -38,6 +38,8 @@ p {
     width: 150px;
     float: left;
     height: 500px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
 }
 
 .whativedone {
