@@ -3,7 +3,7 @@
 
 body {
     
-    font-family: Georgia, Arial, Helvetica, sans-serif;
+    font-family: Georgia, sans-serif;
     font-size: 13px;
     background-image: url(../AbstractBackground.svg);
 	background-repeat: no-repeat;
@@ -11,7 +11,7 @@ body {
 }
 
 p {
-    color: rgb(245,65,130);
+    color: rgb(0,65,130);
 	background-color: rgba(256,256,256,0.5);
     font-size: 30px;
     font-family: "Book Antiqua", sans-serif;
