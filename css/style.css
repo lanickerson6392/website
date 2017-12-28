@@ -28,8 +28,9 @@ p {
 #content {
     
     float: left;
-    background: #FFFFFF;
     width: 850px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
 }
 
 #leftcolumn {
