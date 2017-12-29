@@ -74,6 +74,8 @@ img {
     position: relative;
     display: block;    
     margin: auto;
+	height: 10px;
+	width: 15px;
 }
 
 .gallery {
