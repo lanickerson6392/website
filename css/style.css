@@ -36,7 +36,7 @@ p {
 #leftcolumn {
     
     background-color: rgba(255,255,255,0.3);
-	color: black;
+	color: white;
     width: 150px;
     float: left;
     height: 700px;
@@ -74,8 +74,6 @@ img {
     position: relative;
     display: block;    
     margin: auto;
-	height: 10px;
-	width: 15px;
 }
 
 .gallery {
