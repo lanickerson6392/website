@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java Script</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>------------ Exercise 1 -------------</h1>
+      <h2>Measurement Converter with User Input</h2>
+        <h3>Problem Statement</h3>
+          <p>Write a program that converts feet to inches</p>
+        <h3>Plans and pseudocode</h3>
+          <p>Write an onchange event that calls the feetConverter function when the Convert button is pressed<br />
+             Write an onchange event that calls the inchConverter function when the Convert button is pressed<br />
+             Create a Convert button<br />
+             Create an inchConverter function that converts feet to inches: feet * 12<br />
+             Create a feetConverter function that converts inches to feet: inches / 12<br />
+             Output inches or feet, depending on the input
+          </p>
+        <h3>Solution</h3>
+          <p>function inchConverter(){
+               document.converter.feet.value = document.converter.inch.value / 12
+          }<br />
+             function feetConverter(){
+               document.converter.inch.value = document.converter.feet.value * 12
+          }</p>
+
+        <h3>Demonstration</h3>
+          <form name="converter">
+            Feet: <input type="text" name="feet" onChange="feetConverter()"><br />
+            Inch: <input type="text" name="inch" onChange="inchConverter()"><br />
+            <input type="button" value="Convert" />
+          </form>
+          <script>
+            function inchConverter(){
+              document.converter.feet.value = document.converter.inch.value / 12
+          }
+            function feetConverter(){
+              document.converter.inch.value = document.converter.feet.value * 12
+          }
+          </script>
+    <h1>------------ Exercise 2 -------------</h1>
+      <h2> Convert the numbers 1-5000 into Roman Numerals</h2>
+        <h3>Problem Statement</h3>
+          <p>Write a program that converts the numbers 1-5000 into Roman numerals</p>
+        <h3>Plans and pseudocode</h3>
+          <p>Create a Convert button<br />
+             Declare var numeralCodes<br />
+             Assign var numeralCodes to an array for Roman Numerals counting by ones, then tens, then hundreds, and last, thousands, up to 5000<br />
+             Create a convert(num) function that converts a whole decimal number input between 1-5000 into a Roman numeral<br />
+             Output a Roman Numeral with a decimal value between 1-5000
+        <h3>Solution</h3>
+          <p>input id="text-input" type="text"<br />
+             button id="convert-button" onClick="var n = parseInt(document.getElementById('text-input').value);document.getElementById('text-output').value = convert(n);">Convert!</button><br />
+             input id="text-output" type="text"<br />
+             var numeralCodes<br />
+             numeralCodes = [["","I","II","III","IV","V","VI","VII","VIII","IX"],           // Ones<br />
+                             ["","X","XX","XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"],   // Tens<br />
+                             ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"],        // Hundreds<br />
+                             ["","M","MM","MMM","MMMM","MMMMM"]];                       //Thousands<br />
+             function convert(num) {<br />
+               var numeral = "";<br />
+               var digits = num.toString().split('').reverse();<br />
+               for (var i=0; i < digits.length; i++){<br />
+                 numeral = numeralCodes[i][parseInt(digits[i])] + numeral;<br />
+               }<br />
+               return numeral;<br />
+             }<p/>
+        <h3>Demonstration</h3>
+          Decimal Number: <input id="textInput" type="number" placeholder="Ex. 5">
+          <button id="convert-button" onClick="var n = parseInt(document.getElementById('textInput').value);document.getElementById('textOutput').value = convert(n);">Convert</button><br />
+          Roman Numeral: <input id="textOutput" type="text" placeholder="output only">
+          <script>
+          //if (textInput % 1 == 0 && 1 <= textInput <= 5000) {
+            var textInput
+            var textOutput
+            var numeralCodes = [["","I","II","III","IV","V","VI","VII","VIII","IX"],          // Ones
+                                ["","X","XX","XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"],   // Tens
+                                ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"],        // Hundreds
+                                ["","M","MM","MMM","MMMM","MMMMM"]];                       //Thousands
+
+            function convert(num) {
+              var numeral = "";
+              var digits = num.toString().split('').reverse();
+              for (var i=0; i < digits.length; i++){
+                numeral = numeralCodes[i][parseInt(digits[i])] + numeral;
+              }
+              return numeral;
+            } 
+          //}
+         </script>
+         
+            
+          
+<script>
+var caesarShift = function(str, amount) {
+
+	// Wrap the amount
+	if (amount < 0)
+		return caesarShift(str, amount + 26);
+
+	// Make an output variable
+	var output = '';
+
+	// Go through each character
+	for (var i = 0; i < str.length; i ++) {
+
+		// Get the character we'll be appending
+		var c = str[i];
+
+		// If it's a letter...
+		if (c.match(/[a-z]/i)) {
+
+			// Get its code
+			var code = str.charCodeAt(i);
+
+			// Uppercase letters
+			if ((code >= 65) && (code <= 90))
+				c = String.fromCharCode(((code - 65 + amount) % 26) + 65);
+
+			// Lowercase letters
+			else if ((code >= 97) && (code <= 122))
+				c = String.fromCharCode(((code - 97 + amount) % 26) + 97);
+
+		}
+
+		// Append
+		output += c;
+
+	}
+
+	// All done!
+	return output;
+
+};
+ </script>
+
+ 
+</html>
