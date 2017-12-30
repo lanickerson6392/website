@@ -20,9 +20,9 @@
     <h2>------------ Exercise 1 -------------</h2>
       <h3>Measurement Converter with User Input</h3>
         <h4>Problem Statement</h4>
-          <p>Write a program that converts feet to inches</p>
+          <p class="java'>Write a program that converts feet to inches</p>
         <h4>Plans and pseudocode</h4>
-          <p>Write an onchange event that calls the feetConverter function when the Convert button is pressed<br />
+          <p class="java">Write an onchange event that calls the feetConverter function when the Convert button is pressed<br />
              Write an onchange event that calls the inchConverter function when the Convert button is pressed<br />
              Create a Convert button<br />
              Create an inchConverter function that converts feet to inches: feet * 12<br />
@@ -30,7 +30,7 @@
              Output inches or feet, depending on the input
           </p>
         <h4>Solution</h4>
-          <p>function inchConverter(){
+          <p class="java">function inchConverter(){
                document.converter.feet.value = document.converter.inch.value / 12
           }<br />
              function feetConverter(){
@@ -54,15 +54,15 @@
     <h2>------------ Exercise 2 -------------</h2>
       <h3> Convert the numbers 1-5000 into Roman Numerals</h3>
         <h4>Problem Statement</h4>
-          <p>Write a program that converts the numbers 1-5000 into Roman numerals</p>
+          <p class="java">Write a program that converts the numbers 1-5000 into Roman numerals</p>
         <h4>Plans and pseudocode</h4>
-          <p>Create a Convert button<br />
+          <p class="java">Create a Convert button<br />
              Declare var numeralCodes<br />
              Assign var numeralCodes to an array for Roman Numerals counting by ones, then tens, then hundreds, and last, thousands, up to 5000<br />
              Create a convert(num) function that converts a whole decimal number input between 1-5000 into a Roman numeral<br />
              Output a Roman Numeral with a decimal value between 1-5000
         <h4>Solution</h4>
-          <p>input id="text-input" type="text"<br />
+          <p class="java">input id="text-input" type="text"<br />
              button id="convert-button" onClick="var n = parseInt(document.getElementById('text-input').value);document.getElementById('text-output').value = convert(n);">Convert!</button><br />
              input id="text-output" type="text"<br />
              var numeralCodes<br />
