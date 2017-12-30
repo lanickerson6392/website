@@ -122,11 +122,9 @@ script, form {
 	margin-right: 50px; 
 	line-height: 1.5;
 }
-#canvas-container {
-   width: 100%;
-   text-align:center;
-}
-
-canvas {
-   display: inline;
+#elements {
+	margin-left: 205px;
+	margin-right: 50px;
+	text-align: center;
+	display: inline;
 }
