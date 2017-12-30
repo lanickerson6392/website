@@ -43,7 +43,7 @@
             Inch: <input type="text" name="inch" onChange="inchConverter()"><br />
             <input type="button" value="Convert" />
           </form>
-          <script>
+          <script class="java">
             function inchConverter(){
               document.converter.feet.value = document.converter.inch.value / 12
           }
@@ -82,7 +82,7 @@
           Decimal Number: <input id="textInput" type="number" placeholder="Ex. 5">
           <button id="convert-button" onClick="var n = parseInt(document.getElementById('textInput').value);document.getElementById('textOutput').value = convert(n);">Convert</button><br />
           Roman Numeral: <input id="textOutput" type="text" placeholder="output only">
-          <script>
+          <script class="java">
           //if (textInput % 1 == 0 && 1 <= textInput <= 5000) {
             var textInput
             var textOutput
@@ -104,7 +104,7 @@
          
             
           
-<script>
+<script class="java">
 var caesarShift = function(str, amount) {
 
 	// Wrap the amount
