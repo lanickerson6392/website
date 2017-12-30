@@ -114,7 +114,7 @@
 <p class="java">
 <form action="#" method="get" onsubmit="return false;"></form>
 Text: <input id="textInput" type="text">
-<button id="convert-button" onClick="var n = parseInt(document.getElementById('textInput').value);document.getElementById('textOutput').value = convert(n);">Encrypt</button><br />
+<button id="shift-button" onClick="var n = parseInt(document.getElementById('textInput').value);document.getElementById('textOutput').value = convert(n);">Encrypt</button><br />
 Encrypted Text: <input id="textOutput" type="text">
 </p>
 <script>
@@ -131,8 +131,8 @@ function doCrypt(isDecrypt) {
 	}
 	if (isDecrypt)
 		shift = (26 - shift) % 26;
-	var textElem = document.getElementById("text");
-	textElem.value = caesarShift(textElem.value, shift);
+	var textElement = document.getElementById("textInput");
+	textElement.value = caesarShift(textElem.value, shift);
 }
 
 function caesarShift(text, shift) {
