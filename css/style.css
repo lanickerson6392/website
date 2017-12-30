@@ -5,7 +5,7 @@ body {
 	background-size: cover; 
 }
 
-.home {
+p {
     color: white;
 	background-color: rgba(255,255,255,0.3);
     font-size: 26px;
@@ -46,13 +46,6 @@ body {
 	position: relative;
 }
 
-.whativedone {
-        
-    background-image: url("wood_background.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
 h1 {
     color: white;
 	background-color: rgba(255,255,255,0.3);
@@ -64,25 +57,11 @@ h1 {
 	position: relative;
 } 
 
-.whativedoneheader {
-	
-    color: white;
-	background-color: rgba(120,120,120,0.8);
-    text-align: center;
-	font-family: "Georgia", serif;
-	font-size: 65px;
-}
-
 img {
 	
     position: relative;
     display: block;    
     margin: auto;
-}
-
-.gallery {
-	
-    background-color: lightblue;
 }
 
 a {
