@@ -16,6 +16,7 @@ body {
 	margin-left: 205px;
 	margin-right: 50px; 
 	line-height: 1.5;
+	postion: relative;
 }
 
 #wrapper {
