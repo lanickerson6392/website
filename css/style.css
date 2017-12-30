@@ -1,4 +1,8 @@
-body {  
+body { 
+		background-image: url(../AbstractBackground.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachement: fixed;
 }
 
 .home {
