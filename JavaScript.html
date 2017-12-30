@@ -111,17 +111,19 @@
 	    <h4>Solution</h4>
 	      <p class="java"></p>
 	    <h4>Demonstration</h4>
+<p class="java">
+<form action="#" method="get" onsubmit="return false;">
+</p>
 <script>
-
 function doCrypt(isDecrypt) {
 	var shiftText = document.getElementById("shift").value;
 	if (!/^-?\d+$/.test(shiftText)) {
-		alert("Shift is not an integer");
+		alert("Must be an integer between 0 and 25");
 		return;
 	}
 	var shift = parseInt(shiftText, 10);
 	if (shift < 0 || shift >= 26) {
-		alert("Shift is out of range");
+		alert("Must be an integer between 0 and 25");
 		return;
 	}
 	if (isDecrypt)
