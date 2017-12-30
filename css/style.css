@@ -127,6 +127,11 @@ script, form {
 	margin-right: 50px;
 	text-align: center;
 }
+#canvas-container {
+   width: 100%;
+   text-align:center;
+}
+
 canvas {
-	display: inline;
+   display: inline;
 }
