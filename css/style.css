@@ -63,6 +63,7 @@ h2 {
 	font-size: 50px;
 	margin-right: 50px;
 	margin-left: 205px;
+	position: fixed;
 }
 h3 {
 	color: white;
