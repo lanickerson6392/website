@@ -46,7 +46,7 @@ p {
 	position: relative;
 }
 
-h1, h2, h3, h4 {
+h1 {
     color: white;
 	background-color: rgba(255,255,255,0.3);
     text-align: center;
@@ -56,6 +56,33 @@ h1, h2, h3, h4 {
     margin-left: 205px;
 	position: relative;
 } 
+h2 {
+	color: white;
+	background-color: rgba(255,255,255,0.3);
+	text-align: left;
+	font-family: 'Monserrat', sans-serif;
+	font-size: 50px;
+	margin-right: 50px;
+	margin-left: 205px;
+}
+h3 {
+	color: white;
+	background-color: rgba(255,255,255,0.3);
+	text-align: left;
+	font-family: 'Monserrat', sans-serif;
+	font-size: 40px;
+	margin-right: 50px;
+	margin-left: 205px;
+}
+h4 {
+	color: white;
+	background-color: rgba(255,255,255,0.3);
+	text-align: left;
+	font-family: 'Monserrat', sans-serif;
+	font-size: 30px;
+	margin-right: 50px;
+	margin-left: 205px;
+}
 
 img {
 	
