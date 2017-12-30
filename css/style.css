@@ -112,3 +112,17 @@ a {
 	margin-right: 50px; 
 	line-height: 1.5;
 	postion: relative;
+}
+script {
+		color: white; 
+	background-color: rgba(255,255,255,0.3); 
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    float: none;
+    padding: 10px;
+	margin-left: 205px;
+	margin-right: 50px; 
+	line-height: 1.5;
+	postion: relative;
+}
