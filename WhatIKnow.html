@@ -14,13 +14,11 @@
 </div> 
 <h1>What I Know</h1>
 <h3>The Canvas Element:</h3> 
-<div id="elements">
-<canvas width="200" height="100">
-Your browser does not support the HTML5 canvas tag.
-</canvas>
+<div id="canvas-container">
+<canvas id="myCanvas" width=200 height=100>Your browser doesn't support canvas</canvas>
 </div>
 <script>
-var c = document.getElementById("elements");
+var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var grd = ctx.createRadialGradient(75,50,5,90,60,100);
 grd.addColorStop(0,"blue");
