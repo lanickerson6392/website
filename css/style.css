@@ -109,7 +109,7 @@ a {
 	margin-right: 50px; 
 	line-height: 1.5;
 }
-script, form, input {
+script, form {
 		color: white; 
 	background-color: rgba(255,255,255,0.3); 
     font-size: 20px;
