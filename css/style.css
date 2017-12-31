@@ -86,7 +86,8 @@ img {
 	
     position: relative;
     display: block;    
-    margin: auto;
+    margin-left: 205px;
+	margin-right: 50px;
 }
 
 a {
