@@ -83,10 +83,9 @@ h4 {
 }
 
 img {
-   text-align:center;
-	margin-left: 205px;
-	margin-right: 50px;  
-	display: inline;
+	position: relative;
+	margin: auto;
+	display: block;
 }
 
 a {
@@ -135,4 +134,10 @@ script, form {
 
 canvas {
    display: inline;
+}
+.profile {
+	text-align: center;
+	margin-left: 205px;
+	margin-right: 50px;
+	display: inline;
 }
