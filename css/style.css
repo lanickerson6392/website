@@ -150,3 +150,6 @@ canvas {
 .profile {
 	border: 5px solid white;
 }
+.check {
+	float: left;
+}
