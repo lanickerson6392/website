@@ -106,9 +106,37 @@
 	    <h4>Problem Statement</h4>
 	      <p class="java">Create a caesar cipher</p>
 	    <h4>Plans and Pseudocode</h4>
-	      <p class="java"></p>
+	      <p class="java">Create a function doCrypt(isDecrypt) for the shift amount<br />
+		      Create a function caesarShift to carry out the shift<br />
+		      Create a button that carries out the caesarShift function</p>
 	    <h4>Solution</h4>
-	      <p class="java"></p> 
+	  <p class="java">function doCrypt(isDecrypt) {
+	var shiftText = document.getElementById("shift").value;
+	if (!/^-?\d+$/.test(shiftText)) {
+		alert("Must be an integer between 0 and 25");
+		return;
+	}
+	var shift = parseInt(shiftText, 10);
+	if (shift < 0 || shift >= 26) {
+		alert("Must be an integer between 0 and 25");
+		return;
+	}
+	if (isDecrypt)
+		shift = (26 - shift) % 26;
+	var textElement = document.getElementById("textInp");
+	textElement.value = caesarShift(textElem.value, shift);
+}
+
+function caesarShift(text, shift) {
+	var result = "";
+	for (var i = 0; i < text.length; i++) {
+		var c = text.charCodeAt(i);
+		if      (65 <= c && c <=  90) result += String.fromCharCode((c - 65 + shift) % 26 + 65);  // Uppercase
+		else if (97 <= c && c <= 122) result += String.fromCharCode((c - 97 + shift) % 26 + 97);  // Lowercase
+		else                          result += text.charAt(i);  // Copy
+	}
+	return result;
+					    }</p> 
 	    <h4>Demonstration</h4>
 <div class="java">
 <p class="java">Text Input:
