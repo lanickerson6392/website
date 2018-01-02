@@ -121,7 +121,7 @@ script, form {
 	margin-right: 50px; 
 	line-height: 1.5;
 }
-#elements {
+.elements {
 	margin-left: 205px;
 	margin-right: 50px;
 	text-align: center;
