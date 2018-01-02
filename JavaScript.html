@@ -61,7 +61,7 @@
         <h4>Solution</h4>
           <p class="java">
 		input id="text-input" type="text"<br />
-             button id="convert-button" onClick="var n = parseInt(document.getElementById('text-input').value);document.getElementById('text-output').value = convert(n);">Convert!</button><br />
+             button id="convert-button" onClick="var n = parseInt(document.getElementById('text-input').value);document.getElementById('text-output').value = convert(n);">Convert!<br />
              input id="text-output" type="text"<br />
              var numeralCodes<br />
              numeralCodes = [["","I","II","III","IV","V","VI","VII","VIII","IX"],           // Ones<br />
@@ -71,7 +71,7 @@
              function convert(num) {<br />
                var numeral = "";<br />
                var digits = num.toString().split('').reverse();<br />
-               for (var i=0; i < digits.length; i++){<br />
+               for (var i=0; i <digits.length; i++){<br />
                  numeral = numeralCodes[i][parseInt(digits[i])] + numeral;<br />
                }<br />
                return numeral;<br />
